@@ -3,26 +3,66 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>台中市景點推薦</title>
 
 	<style>
 		td {text-align: center;}
 		.font1 {font-size: 36px}
 		.font2 {font-size: 28px}
+		.font2:hover {font-size: 32px;background-color: black; color: white;}
 		.font3 {font-size: 20px}
+		.font3:hover {font-size: 24px;background-color: black; color: white;}
 		.container {margin:0 auto;width: 1024px}
 		.round_img1 {border-radius: 20px ;}
 		.round_img2 {border-radius: 50% ;width: 300px;height: 300px;}
-	</style>
+		.round_img1:hover {opacity: 80%}
+		.round_img2:hover {opacity: 80%;rotate:-5deg;}
+		td{padding: 20px}
+		.navbar {
+		  overflow: hidden;
+		  background-color: #333;
+		  position: fixed;
+		  top: 0;
+		  width: 100%;
+		}
+
+		.navbar a {
+		  float: left;
+		  display: block;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  font-size: 17px;
+		}
+
+		.navbar a:hover {
+		  background: #ddd;
+		  color: black;
+		}
+
+		.main {
+		  padding: 16px;
+		  margin-top: 30px;
+		  height: 1500px; /* Used in this example to enable scrolling */
+		}
+</style>
 </head>
 <body>
+
+<div class="navbar">
+  <a href="#t1">臺中市</a>
+  <a href="#t2">台中國家歌劇院</a>
+  <a href="#t3">臺中州廳</a>
+  <a href="#t4">審計新村</a>
+</div>
 	<div class="container">
 	<table>
 		<tr>
 			<td colspan="2">
 			<font class = "font1">台中市景點推薦</font>
 			<br> 
-			<img class="round_img1" src="00taichung.jpeg" width="1024px" height="300px">
+			<img id=t1 class="round_img1" src="00taichung.jpeg" width="1024px" height="300px">
 			</td>
 		</tr>
 		<tr>
@@ -34,7 +74,7 @@
 			</td>
 		</tr>
 		<tr>
-			<td><img class="round_img2" src="01.jpeg"></td>
+			<td><img id=t2 class="round_img2" src="01.jpeg"></td>
 			<td>
 			<font class="font3">台中國家歌劇院</font>
 			<br>
@@ -56,10 +96,10 @@
 			<br>
 			所在位置：台中市西區民權路99號
 			</td>
-			<td><img class="round_img2" src="02.jpeg"></td>
+			<td><img id=t3 class="round_img2" src="02.jpeg"></td>
 		</tr>
 		<tr>
-			<td><img class="round_img2" src="03.jpeg"></td>
+			<td><img id=t4 class="round_img2" src="03.jpeg"></td>
 			<td>
 			<font class="font3">審計新村</font>
 			<br>
